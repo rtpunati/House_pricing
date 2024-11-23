@@ -110,35 +110,3 @@ The models were evaluated based on the following metrics:
 2. Train and evaluate models (Decision Tree, Random Forest, Bagging).
 3. Generate performance metrics such as accuracy, sensitivity, and specificity.
 4. Visualize the results and compare model performance.
-
-```python
-# Example usage:
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeClassifier
-
-# Load data
-data = pd.read_csv('house_prices.csv')
-
-# Split data into training and validation sets
-train_df, valid_df = train_test_split(data, test_size=0.4)
-
-# Train decision tree model
-model = DecisionTreeClassifier()
-model.fit(train_df[['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot']], train_df['price'])
-
-# Make predictions
-predictions = model.predict(valid_df[['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot']])
-
-# Evaluate performance
-from sklearn.metrics import accuracy_score
-print(f"Accuracy: {accuracy_score(valid_df['price'], predictions)}")
-```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-
-You can adjust the details, especially for the "Installation" and "Usage" sections, based on your specific environment and dependencies.
