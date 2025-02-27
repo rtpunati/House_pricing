@@ -2,7 +2,7 @@
 
 chooseCRANmirror()
 
-house.df <- read.csv("RatanTejaPunati_housing_price.csv")
+house.df <- read.csv("RTP_housing_price.csv")
 View(house.df)
 str(house.df)
 

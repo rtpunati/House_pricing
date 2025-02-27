@@ -2,7 +2,7 @@
 chooseCRANmirror()
 setwd("C:/DS535/projectwk3") 
 
-house.df <- read.csv("RatanTejaPunati_housing_price.csv")
+house.df <- read.csv("RTP_housing_price.csv")
 str(house.df)  # structure of the data frame
 head(house.df, 9)
 tail(house.df)   # default, show last 5 records

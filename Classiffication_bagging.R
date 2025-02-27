@@ -22,7 +22,7 @@ library(ipred)       #for fitting bagged decision trees
 
 
 ####### preparing data
-house.df <- read.csv("RatanTejaPunati_housing_price.csv")
+house.df <- read.csv("RTP_housing_price.csv")
 View(house.df)
 
 str(house.df)
@@ -234,5 +234,3 @@ c.mat   # row: predicted ;   column: actual
 sum(diag(c.mat))/sum(c.mat) # this gives accuracy: overall correct classification percentage 
 c.mat[2,2]/sum(c.mat[,2])   # this gives True positive percentage, or sensitivity
 c.mat[1,1]/sum(c.mat[,1])   # this gives True negatie percentage, or specificity
-
-
